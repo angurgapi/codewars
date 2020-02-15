@@ -1,6 +1,5 @@
-def fibo(n):
-    fif = [1,1]
-    for i in range(n-2):
-        sum = fif[-1] + fif[-2]
-        fif.append(sum)
-    print(fif)
+def fibonacci(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
